@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleName</key><string>Blabberflow</string>
+<key>CFBundleDisplayName</key><string>Blabberflow</string>
+<key>CFBundleIdentifier</key><string>ca.donwong.whisperflow</string>
+<key>CFBundleVersion</key><string>8</string>
+<key>CFBundleShortVersionString</key><string>0.3.1</string>
+<key>CFBundleExecutable</key><string>WhisperFlow</string>
+<key>CFBundleIconFile</key><string>AppIcon</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>LSMinimumSystemVersion</key><string>13.0</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSMicrophoneUsageDescription</key><string>Blabberflow uses your microphone only during dictation to turn your speech into text.</string>
+<key>NSSpeechRecognitionUsageDescription</key><string>Blabberflow transcribes your dictation using Apple Speech. Apple may process audio online unless on-device only is enabled.</string>
+</dict></plist>

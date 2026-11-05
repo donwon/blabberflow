@@ -1,0 +1,19 @@
+.build/
+dist/
+.playwright-cli/
+output/playwright/
+.DS_Store
+.env
+.env.*
+*.xcuserstate
+
+# Local build notes, screenshots, recordings and exports
+output/
+PRODUCT.md
+DESIGN.md
+docs/RESEARCH.md
+docs/*.png
+*.webm
+*.mp4
+*.wav
+*.m4a
