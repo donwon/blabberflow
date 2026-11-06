@@ -4,11 +4,26 @@ Hold a shortcut, speak, and release to put your words into the text field you’
 
 Blabberflow is an experimental native macOS dictation utility built with SwiftUI and Apple Speech. It supports cross-app insertion, configurable hold shortcuts, custom vocabulary, and optional local transcript history. No app account, subscription, or paid transcription API key is required.
 
-**Source release:** build it yourself using the instructions below. There is no signed, notarized public installer or Mac App Store release yet.
+## Download and install
+
+**[⬇ Download Blabberflow for Mac](https://github.com/donwon/blabberflow/releases/download/v0.3.1/Blabberflow-0.3.1-universal.dmg)**
+
+macOS 13+ · Apple Silicon and Intel · Experimental v0.3.1
+
+1. Download and open the DMG.
+2. Drag **Blabberflow** to **Applications**, eject the disk image, and launch the installed app.
+3. Allow **Microphone**, **Speech Recognition**, and **Accessibility**.
+4. Click a text field, hold **Control + Shift**, speak, then release the keys.
+
+**This early build is not Developer ID signed or notarized by Apple.** macOS may block the first launch. Read [the installation guide](docs/INSTALL.md#if-macos-blocks-the-app) before deciding whether to open it. A signed, notarized release is still planned; this is not a Mac App Store release.
+
+[Step-by-step setup and troubleshooting](docs/INSTALL.md) · [ZIP download](https://github.com/donwon/blabberflow/releases/download/v0.3.1/Blabberflow-0.3.1-universal.zip) · [Release notes and checksums](https://github.com/donwon/blabberflow/releases/tag/v0.3.1)
+
+**Windows is not supported yet.** No Xcode or Terminal is needed for the download above.
 
 Independent software. Not affiliated with Wispr Flow. Despite earlier internal names, transcription uses **Apple Speech**, not OpenAI Whisper.
 
-## Build
+## Build from source (optional)
 
 Requires macOS 13 or later, Xcode Command Line Tools, and Swift 5.8 or later. No external package dependencies.
 
@@ -66,6 +81,8 @@ A bounded `runtime-status.json` stores delivery, destination app/field role, per
 `Sources/FlowCore` contains vocabulary processing, delivery decisions, shortcut state, and completion logic. `Sources/WhisperFlow` contains the macOS app and integrations. Tests cover these state transitions and delivery decisions. Live microphone recording and cross-app behavior still need interactive testing on each supported setup.
 
 The executable target and bundle identifier retain their original internal names. The visible app name is Blabberflow.
+
+To reproduce the universal DMG, ZIP and SHA-256 checksums, run `bash scripts/package-release.sh` on a Mac with Xcode installed. Files are written to `dist/releases/`. This packaging script uses an ad-hoc signature; it does not perform Apple notarization.
 
 See [contributing](CONTRIBUTING.md) and [the project directory](https://github.com/donwon/open-source).
 
