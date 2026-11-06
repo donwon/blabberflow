@@ -4,6 +4,8 @@ Hold a shortcut, speak, and release to put your words into the text field you’
 
 Blabberflow is an experimental native macOS dictation utility built with SwiftUI and Apple Speech. It supports cross-app insertion, configurable hold shortcuts, custom vocabulary, and optional local transcript history. No app account, subscription, or paid transcription API key is required.
 
+**[▶ Watch how I built Blabberflow with Codex — Don Won Builds on YouTube](https://youtu.be/6YOSufEIUj0)**
+
 ## Download and install
 
 **[⬇ Download Blabberflow for Mac](https://github.com/donwon/blabberflow/releases/download/v0.3.1/Blabberflow-0.3.1-universal.dmg)**
